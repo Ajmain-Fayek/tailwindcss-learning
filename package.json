@@ -98,9 +98,12 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "day-1": "npx tailwindcss -i ./src/input.css -o ./day_1/output.css --watch"
+    "day-1": "npx tailwindcss -i ./src/input.css -o ./day_1/output.css --watch",
+    "day-2": "npx tailwindcss -i ./src/input_day-2.css -o ./day_2/output.css --watch",
+    "day-3": "npx tailwindcss -i ./src/input.css -o ./day_3/output.css --watch"
   },
   "author": "ajmain-fayek",
   "license": "ISC",
-  "description": "learning tailwindcss"
+  "description": "learning tailwindcss",
+  "type": "module"
 }
