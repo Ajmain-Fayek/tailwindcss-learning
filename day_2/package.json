@@ -97,8 +97,8 @@
     "yaml": "^2.5.0"
   },
   "scripts": {
-    "build": "npx tailwindcss -i ../src/input.css -o ../day_2/assets/css/output.css",
-    "watch": "npx tailwindcss -i ../src/input.css -o ../day_2/assets/css/output.css --watch"
+    "build": "npx tailwindcss -i ../src/project_01-Manage.css -o ../day_2/assets/css/output.css",
+    "watch": "npx tailwindcss -i ../src/project_01-Manage.css -o ../day_2/assets/css/output.css --watch"
   },
   "author": "ajmain-fayek",
   "license": "ISC",
