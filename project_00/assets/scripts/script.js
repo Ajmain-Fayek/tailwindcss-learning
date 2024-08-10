@@ -1,7 +1,7 @@
 // Day 2
 const day_2 = document.getElementById("day_2");
 day_2.addEventListener('click', function(){
-    window.location = "../project_01/index.html";
+    window.location = "../project_01-Manage/index.html";
 })
 
 //Day 3
