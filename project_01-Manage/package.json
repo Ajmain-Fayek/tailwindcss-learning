@@ -97,8 +97,8 @@
     "yaml": "^2.5.0"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "day-1": "npx tailwindcss -i ../src/input.css -o ../day_1/output.css --watch"
+    "build": "npx tailwindcss -i ../src/project_01-Manage.css -o ../project_01/assets/css/output.css",
+    "watch": "npx tailwindcss -i ../src/project_01-Manage.css -o ../project_01-Manage/assets/css/output.css --watch"
   },
   "author": "ajmain-fayek",
   "license": "ISC",
