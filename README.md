@@ -1,2 +1,2 @@
 # Tailwindcss Learning
-* Live link: https://ajmain-fayek.github.io/tailwindcss-learning/day_1/index.html
+* Live link: https://ajmain-fayek.github.io/tailwindcss-learning/project_00/index.html
