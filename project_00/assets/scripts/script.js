@@ -7,5 +7,5 @@ day_2.addEventListener('click', function(){
 //Day 3
 const day_3 = document.getElementById("day_3");
 day_3.addEventListener('click', function(){
-    window.location = "../project_02/index.html";
+    window.location = "../project_02-/index.html";
 })
