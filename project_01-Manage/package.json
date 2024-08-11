@@ -97,7 +97,7 @@
     "yaml": "^2.5.0"
   },
   "scripts": {
-    "build": "npx tailwindcss -i ../src/project_01-Manage.css -o ../project_01/assets/css/output.css",
+    "build": "npx tailwindcss -i ../src/project_01-Manage.css -o ../project_01-Manage/assets/css/output.css",
     "watch": "npx tailwindcss -i ../src/project_01-Manage.css -o ../project_01-Manage/assets/css/output.css --watch"
   },
   "author": "ajmain-fayek",
