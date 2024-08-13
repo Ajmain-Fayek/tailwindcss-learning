@@ -1,12 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tailwindcss Day-2</title>
-    <link rel="stylesheet" href="./output.css">
+    <link rel="stylesheet" href="./assets/css/output.css">
 </head>
+
 <body>
-    <h1 class="bg-yellow-200 text-center font-bold text-xl p-3">Tailwindcss Learning Day-3</h1>
+    <!-- Navbar -->
+    <nav class="container relative mx-auto flex items-center justify-between p-3 ">
+        <!-- Logo -->
+        <div class="flex items-center space-x-1 font-bold">
+            <img src="./assets/images/asset 0.png" class="h-10" alt="">
+            <h1>ToDesktop</h1>
+        </div>
+        <!-- Logo -->
+        <!-- Links -->
+        <div class="hidden md:flex justify-between space-x-4 lg:space-x-9">
+            <a href="#" class="font-semibold">Pricing</a>
+            <a href="#" class="font-semibold">Docs</a>
+            <a href="#" class="font-semibold">Change Log</a>
+            <a href="#" class="font-semibold">Blogs</a>
+            <a href="#" class="font-semibold">Login</a>
+        </div>
+        <!-- Links -->
+        <!-- button -->
+        <div>
+            <button class="hidden md:flex items-center border border-gray-400 rounded-md px-2 py-1 space-x-2">
+                <img src="./assets/images/electron.svg" class="h-5" alt="">
+                <p>Electron Developers</p>
+                <img src="./assets/images/right-heding-arro.svg" class="h-3" alt="">
+            </button>
+        </div>
+        <!-- button -->
+        <!-- Hamburger menu -->
+        <div class="md:hidden relative">
+            <!-- Hambuerger-btn -->
+            <button id="hamburger-menu" class="flex flex-col hamburger-menu">
+                <span class="hamburger-top"></span>
+                <span class="hamburger-middle"></span>
+                <span class="hamburger-bottom"></span>
+            </button>
+            <!-- Hambuerger-btn -->
+        </div>
+        <!-- Links -->
+        <div id="links" class="hidden absolute bg-blue-200 rounded-md space-y-2 p-4 top-16 left-4 right-4 flex-col items-center">
+            <a href="#" class="font-semibold">Pricing</a>
+            <a href="#" class="font-semibold">Docs</a>
+            <a href="#" class="font-semibold">Change Log</a>
+            <a href="#" class="font-semibold">Blogs</a>
+            <a href="#" class="font-semibold">Login</a>
+        </div>
+        <!-- Links -->
+        <!-- Hamburger menu -->
+    </nav>
+    <!-- Navbar -->
+
+    <!-- JavaScript Injection -->
+    <script src="./assets/scripts/script.js"></script>
+    <!-- JavaScript Injection -->
 </body>
+
 </html>
