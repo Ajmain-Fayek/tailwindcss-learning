@@ -98,8 +98,8 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "npx tailwindcss -i ../src/project_02-.css -o ../project_02-/output.css",
-    "watch": "npx tailwindcss -i ../src/project_02-.css -o ../project_02-/output.css --watch"
+    "build": "npx tailwindcss -i ../src/project_02-ToDesktop.css -o ../project_02-ToDesktop/assets/css/output.css",
+    "watch": "npx tailwindcss -i ../src/project_02-ToDesktop.css -o ../project_02-ToDesktop/assets/css/output.css --watch"
   },
   "author": "ajmain-fayek",
   "license": "ISC",
