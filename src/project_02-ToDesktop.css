@@ -42,3 +42,20 @@
     display: flex;
     transition: .25s ease-in-out;
 }
+
+#hero {
+    background: linear-gradient(180deg, #f1a8ff31, #fff0ae44, #00000000);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* scrollbar hidden for chrome, safari, opera */
+.cards::-webkit-scrollbar {
+    display: none;
+}
+/* scrollbar hidden for IE, Edge, Firefox */
+.cards {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+

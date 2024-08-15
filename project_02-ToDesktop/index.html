@@ -6,60 +6,229 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tailwindcss Day-2</title>
     <link rel="stylesheet" href="./assets/css/output.css">
+    <link rel="shortcut icon" href="./assets/images/asset 0.png" type="image/x-icon">
+    <!-- <script src="https://kit.fontawesome.com/9c5e5f72e0.js" crossorigin="anonymous"></script> -->
 </head>
 
 <body>
     <!-- Navbar -->
-    <nav class="container relative mx-auto flex items-center justify-between p-3 ">
-        <!-- Logo -->
-        <div class="flex items-center space-x-1 font-bold">
-            <img src="./assets/images/asset 0.png" class="h-10" alt="">
-            <h1>ToDesktop</h1>
+    <nav class="mx-auto shadow-md">
+        <div class="container mx-auto flex items-center justify-between px-2 py-4">
+            <!-- Logo -->
+            <div class="flex items-center space-x-1 font-bold">
+                <img src="./assets/images/asset 0.png" class="h-10" alt="">
+                <h1>ToDesktop</h1>
+            </div>
+            <!-- Logo -->
+            <!-- Links -->
+            <div class="hidden md:flex justify-between space-x-4 lg:space-x-9">
+                <a href="#" class="font-semibold">Pricing</a>
+                <a href="#" class="font-semibold">Docs</a>
+                <a href="#" class="font-semibold">Change Log</a>
+                <a href="#" class="font-semibold">Blogs</a>
+                <a href="#" class="font-semibold">Login</a>
+            </div>
+            <!-- Links -->
+            <!-- button -->
+            <div>
+                <button class="hidden md:flex items-center border border-gray-400 rounded-md px-2 py-1 space-x-2">
+                    <img src="./assets/images/electron.svg" class="h-5" alt="">
+                    <p>Electron Developers</p>
+                    <img src="./assets/images/right-heding-arro.svg" class="h-3" alt="">
+                </button>
+            </div>
+            <!-- button -->
+            <!-- Hamburger menu -->
+            <div class="md:hidden relative">
+                <!-- Hambuerger-btn -->
+                <button id="hamburger-menu" class="flex flex-col hamburger-menu">
+                    <span class="hamburger-top"></span>
+                    <span class="hamburger-middle"></span>
+                    <span class="hamburger-bottom"></span>
+                </button>
+                <!-- Hambuerger-btn -->
+            </div>
+            <!-- Links -->
+            <div id="links"
+                class="hidden absolute bg-blue-200 rounded-md space-y-2 p-4 top-16 left-4 right-4 flex-col items-center">
+                <a href="#" class="font-semibold">Pricing</a>
+                <a href="#" class="font-semibold">Docs</a>
+                <a href="#" class="font-semibold">Change Log</a>
+                <a href="#" class="font-semibold">Blogs</a>
+                <a href="#" class="font-semibold">Login</a>
+            </div>
+            <!-- Links -->
+            <!-- Hamburger menu -->
         </div>
-        <!-- Logo -->
-        <!-- Links -->
-        <div class="hidden md:flex justify-between space-x-4 lg:space-x-9">
-            <a href="#" class="font-semibold">Pricing</a>
-            <a href="#" class="font-semibold">Docs</a>
-            <a href="#" class="font-semibold">Change Log</a>
-            <a href="#" class="font-semibold">Blogs</a>
-            <a href="#" class="font-semibold">Login</a>
-        </div>
-        <!-- Links -->
-        <!-- button -->
-        <div>
-            <button class="hidden md:flex items-center border border-gray-400 rounded-md px-2 py-1 space-x-2">
-                <img src="./assets/images/electron.svg" class="h-5" alt="">
-                <p>Electron Developers</p>
-                <img src="./assets/images/right-heding-arro.svg" class="h-3" alt="">
-            </button>
-        </div>
-        <!-- button -->
-        <!-- Hamburger menu -->
-        <div class="md:hidden relative">
-            <!-- Hambuerger-btn -->
-            <button id="hamburger-menu" class="flex flex-col hamburger-menu">
-                <span class="hamburger-top"></span>
-                <span class="hamburger-middle"></span>
-                <span class="hamburger-bottom"></span>
-            </button>
-            <!-- Hambuerger-btn -->
-        </div>
-        <!-- Links -->
-        <div id="links" class="hidden absolute bg-blue-200 rounded-md space-y-2 p-4 top-16 left-4 right-4 flex-col items-center">
-            <a href="#" class="font-semibold">Pricing</a>
-            <a href="#" class="font-semibold">Docs</a>
-            <a href="#" class="font-semibold">Change Log</a>
-            <a href="#" class="font-semibold">Blogs</a>
-            <a href="#" class="font-semibold">Login</a>
-        </div>
-        <!-- Links -->
-        <!-- Hamburger menu -->
     </nav>
     <!-- Navbar -->
 
+    <!-- Hero Section Start -->
+    <Section id="hero" class="hero mx-auto px-2 py-16">
+        <!-- Flex Container Start -->
+        <div class="container mx-auto flex flex-col items-center justify-center">
+            <!-- Hero top text part Start-->
+            <div class="hidden md:flex mx-auto mb-8 space-x-10">
+                <div class="flex space-x-1 items-center">
+                    <i class="fa-regular fa-file-code"></i>
+                    <h1 class="">Code Optional</h1>
+                </div>
+                <div class="flex space-x-1 items-center">
+                    <i class="fa-solid fa-hand-fist"></i>
+                    <h1 class="">Drag & Drop Builder</h1>
+                </div>
+                <div class="flex space-x-1 items-center">
+                    <i class="fa-solid fa-laptop"></i>
+                    <h1 class="">Windows, Mac, Linux</h1>
+                </div>
+            </div>
+            <!-- Hero top text part End-->
+            <!-- Heading Start -->
+            <div
+                class="max-w-2xl xl:max-w-6xl mx-auto text-center flex flex-col justify-center items-center space-y-6  xl:space-y-10">
+                <h1 class="font-bold text-4xl md:text-6xl xl:text-8xl">Web App to Desktop App in minutes</h1>
+                <p class="max-w-2xl md:text-2xl">Takes your web app codebase and transform it into a cross platform
+                    desktop app
+                    with native functionality.</p>
+            </div>
+            <!-- Heading end -->
+            <!-- Buttons Start-->
+            <div class="flex space-x-3 mx-auto mt-6 md:mt-14">
+                <button
+                    class="md:text-xl md:py-3 md:px-6 py-2 px-4 bg-blue-700 text-white font-semibold rounded-md hover:bg-blue-500">Download
+                    Now</button>
+                <button
+                    class="md:text-xl md:py-3 md:px-6 py-2 px-4 bg-white text-black border border-gray-400 font-semibold rounded-md hover:border-gray-900">Read
+                    Docs</button>
+            </div>
+            <!-- Buttons end -->
+            <!-- Apps Card start -->
+            <div class="flex flex-col mx-auto text-center mt-10 md:mt-14 space-y-4">
+                <p class="md:text-2xl font-semibold mb-2">Apps Powered By ToDesktop</p>
+                <!-- Cards set 1 start-->
+                <div
+                    class="cards max-w-xs sm:max-w-md md:max-w-2xl lg:max-w-4xl xl:max-w-6xl flex items-center justify-center gap-4 overflow-x-scroll">
+                    <!-- card 1 -->
+                    <div class="mx-auto text-center py-3 px-8 space-y-2 bg-white rounded-md border border-gray-300">
+                        <img src="./assets/images/asset 6.png" class="h-14 w-14" alt="">
+                        <h2 class="font-semibold">Morgen</h2>
+                    </div>
+                    <!-- card 2 -->
+                    <div class="mx-auto text-center py-3 px-8 space-y-2 bg-white rounded-md border border-gray-300">
+                        <img src="./assets/images/asset 6.png" class="h-14 w-14" alt="">
+                        <h2 class="font-semibold">Morgen</h2>
+                    </div>
+                    <!-- card 3 -->
+                    <div class="mx-auto text-center py-3 px-8 space-y-2 bg-white rounded-md border border-gray-300">
+                        <img src="./assets/images/asset 6.png" class="h-14 w-14" alt="">
+                        <h2 class="font-semibold">Morgen</h2>
+                    </div>
+                    <!-- card 4 -->
+                    <div class="mx-auto text-center py-3 px-8 space-y-2 bg-white rounded-md border border-gray-300">
+                        <img src="./assets/images/asset 6.png" class="h-14 w-14" alt="">
+                        <h2 class="font-semibold">Morgen</h2>
+                    </div>
+                    <!-- card 5 -->
+                    <div class="mx-auto text-center py-3 px-8 space-y-2 bg-white rounded-md border border-gray-300">
+                        <img src="./assets/images/asset 6.png" class="h-14 w-14" alt="">
+                        <h2 class="font-semibold">Morgen</h2>
+                    </div>
+                    <!-- card 6 -->
+                    <div class="mx-auto text-center py-3 px-8 space-y-2 bg-white rounded-md border border-gray-300">
+                        <img src="./assets/images/asset 6.png" class="h-14 w-14" alt="">
+                        <h2 class="font-semibold">Morgen</h2>
+                    </div>
+                    <!-- card 7 -->
+                    <div class="mx-auto text-center py-3 px-8 space-y-2 bg-white rounded-md border border-gray-300">
+                        <img src="./assets/images/asset 6.png" class="h-14 w-14" alt="">
+                        <h2 class="font-semibold">Morgen</h2>
+                    </div>
+                    <!-- card 8 -->
+                    <div class="mx-auto text-center py-3 px-8 space-y-2 bg-white rounded-md border border-gray-300">
+                        <img src="./assets/images/asset 6.png" class="h-14 w-14" alt="">
+                        <h2 class="font-semibold">Morgen</h2>
+                    </div>
+                    <!-- card 9 -->
+                    <div class="mx-auto text-center py-3 px-8 space-y-2 bg-white rounded-md border border-gray-300">
+                        <img src="./assets/images/asset 6.png" class="h-14 w-14" alt="">
+                        <h2 class="font-semibold">Morgen</h2>
+                    </div>
+                    <!-- card 10 -->
+                    <div class="mx-auto text-center py-3 px-8 space-y-2 bg-white rounded-md border border-gray-300">
+                        <img src="./assets/images/asset 6.png" class="h-14 w-14" alt="">
+                        <h2 class="font-semibold">Morgen</h2>
+                    </div>
+                </div>
+                <!-- Card set 1 end-->
+                <!-- Card set 2  start-->
+                <div
+                    class="cards max-w-xs sm:max-w-md md:max-w-2xl lg:max-w-4xl xl:max-w-6xl flex items-center justify-center gap-4 overflow-x-scroll">
+                    <!-- card 1 -->
+                    <div class="mx-auto text-center py-3 px-8 space-y-2 bg-white rounded-md border border-gray-300">
+                        <img src="./assets/images/asset 6.png" class="h-14 w-14" alt="">
+                        <h2 class="font-semibold">Morgen</h2>
+                    </div>
+                    <!-- card 2 -->
+                    <div class="mx-auto text-center py-3 px-8 space-y-2 bg-white rounded-md border border-gray-300">
+                        <img src="./assets/images/asset 6.png" class="h-14 w-14" alt="">
+                        <h2 class="font-semibold">Morgen</h2>
+                    </div>
+                    <!-- card 3 -->
+                    <div class="mx-auto text-center py-3 px-8 space-y-2 bg-white rounded-md border border-gray-300">
+                        <img src="./assets/images/asset 6.png" class="h-14 w-14" alt="">
+                        <h2 class="font-semibold">Morgen</h2>
+                    </div>
+                    <!-- card 4 -->
+                    <div class="mx-auto text-center py-3 px-8 space-y-2 bg-white rounded-md border border-gray-300">
+                        <img src="./assets/images/asset 6.png" class="h-14 w-14" alt="">
+                        <h2 class="font-semibold">Morgen</h2>
+                    </div>
+                    <!-- card 5 -->
+                    <div class="mx-auto text-center py-3 px-8 space-y-2 bg-white rounded-md border border-gray-300">
+                        <img src="./assets/images/asset 6.png" class="h-14 w-14" alt="">
+                        <h2 class="font-semibold">Morgen</h2>
+                    </div>
+                    <!-- card 6 -->
+                    <div class="mx-auto text-center py-3 px-8 space-y-2 bg-white rounded-md border border-gray-300">
+                        <img src="./assets/images/asset 6.png" class="h-14 w-14" alt="">
+                        <h2 class="font-semibold">Morgen</h2>
+                    </div>
+                    <!-- card 7 -->
+                    <div class="mx-auto text-center py-3 px-8 space-y-2 bg-white rounded-md border border-gray-300">
+                        <img src="./assets/images/asset 6.png" class="h-14 w-14" alt="">
+                        <h2 class="font-semibold">Morgen</h2>
+                    </div>
+                    <!-- card 8 -->
+                    <div class="mx-auto text-center py-3 px-8 space-y-2 bg-white rounded-md border border-gray-300">
+                        <img src="./assets/images/asset 6.png" class="h-14 w-14" alt="">
+                        <h2 class="font-semibold">Morgen</h2>
+                    </div>
+                    <!-- card 9 -->
+                    <div class="mx-auto text-center py-3 px-8 space-y-2 bg-white rounded-md border border-gray-300">
+                        <img src="./assets/images/asset 6.png" class="h-14 w-14" alt="">
+                        <h2 class="font-semibold">Morgen</h2>
+                    </div>
+                    <!-- card 10 -->
+                    <div class="mx-auto text-center py-3 px-8 space-y-2 bg-white rounded-md border border-gray-300">
+                        <img src="./assets/images/asset 6.png" class="h-14 w-14" alt="">
+                        <h2 class="font-semibold">Morgen</h2>
+                    </div>
+                </div>
+                <!-- Card set 2 end-->
+                <!-- Cards -->
+            </div>
+            <!-- Apps Card End -->
+        </div>
+        <!-- Flex Container End -->
+    </Section>
+    <!-- Hero Section End -->
+
     <!-- JavaScript Injection -->
+    <!-- Project's main Javascript -->
     <script src="./assets/scripts/script.js"></script>
+    <!-- Font Awesome icon start-->
+
+    <script src="https://kit.fontawesome.com/9c5e5f72e0.js" crossorigin="anonymous"></script>
     <!-- JavaScript Injection -->
 </body>
 
