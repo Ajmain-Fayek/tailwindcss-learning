@@ -31,6 +31,9 @@ module.exports = {
       // => @media (min-width: 1536px) { ... }
       '2xl': '1536px',
     },
+    fontFamily: {
+      manrope: ['"Manrope"', 'sans-serif'],
+    },
     extend: {
     },
   },
