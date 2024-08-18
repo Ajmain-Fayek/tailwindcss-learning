@@ -20,6 +20,7 @@
 .hamburger-middle {
     transform: translateY(7px);
 }
+
 .hamburger-bottom {
     transform: translateY(14px);
 }
@@ -28,11 +29,13 @@
     transform: rotate(45deg) translateY(7px) translateX(7px);
     transition: .25s ease-in-out;
 }
+
 .toggle .hamburger-middle {
     background: transparent;
     width: 0;
     transition: .25s;
 }
+
 .toggle .hamburger-bottom {
     transform: rotate(-45deg) translateY(3px) translateX(-3px);
     transition: .25s ease-in-out;
@@ -40,7 +43,6 @@
 
 .links {
     display: flex;
-    transition: .25s ease-in-out;
 }
 
 #hero {
@@ -53,9 +55,9 @@
 .cards::-webkit-scrollbar {
     display: none;
 }
+
 /* scrollbar hidden for IE, Edge, Firefox */
 .cards {
     -ms-overflow-style: none;
     scrollbar-width: none;
 }
-
