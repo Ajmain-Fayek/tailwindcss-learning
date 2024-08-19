@@ -2,3 +2,15 @@ desktop.ini
 .vscode
 node_modules
 package-lock.json
+
+project_00/package.json
+project_00/tailwind.config.js
+
+project_01-Manage/package.json
+project_01-Manage/tailwind.config.js
+
+project_02-ToDesktop/package.json
+project_02-ToDesktop/tailwind.config.js
+
+project_03-Tea-House/package.json
+project_03-Tea-House/tailwind.config.js
