@@ -5,7 +5,8 @@ module.exports = {
     colors: {
       red1: '#d22c34',
       red2: '#ff0000',
-      orange: '#ff8938',
+      orange1: '#ff8938',
+      orange2: '#e6a6231a',
       dark1: '#1c1c1c',
       dark2: '#494949',
       dark3: '#777777',
@@ -13,7 +14,9 @@ module.exports = {
       dark5: '#d2d2d2',
       dark6: '#e8e8e8',
       dark7: '#f4f4f4',
+      dark8: '#d9d9d9',
       white: '#ffffff',
+      green1: '#5776391a',
     },
     screens: {
       // => @media (min-width: 480px) { ... }
